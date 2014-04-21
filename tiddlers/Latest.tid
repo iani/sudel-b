@@ -1,0 +1,8 @@
+created: 20140417190617420
+modified: 20140421092650190
+title: Latest
+type: text/vnd.tiddlywiki
+
+These are the 25 last opened Tiddlers, sorted by last opened date:
+
+<$list filter="[!has[draft.of]!is[system]sort[modified]limit[25]]">

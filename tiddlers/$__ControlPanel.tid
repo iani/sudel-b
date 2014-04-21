@@ -1,0 +1,10 @@
+created: 20140417153056139
+creator: Iannis Zannos
+modified: 20140417153056139
+modifier: Iannis Zannos
+title: $:/ControlPanel
+type: text/vnd.tiddlywiki
+
+<div class="tw-control-panel">
+<<tabs "[all[tiddlers+shadows]tag[$:/tags/ControlPanel]!has[draft.of]]" "$:/core/ui/ControlPanel/Basics">>
+</div>
