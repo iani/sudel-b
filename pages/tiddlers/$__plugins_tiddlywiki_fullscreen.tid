@@ -1,0 +1,16 @@
+created: 20140418082038708
+modified: 20140418085605240
+tags: systemConfig
+title: $:/plugins/tiddlywiki/fullscreen
+type: text/vnd.tiddlywiki
+
+{
+    "tiddlers": {
+        "$:/plugins/tiddlywiki/fullscreen/init.js": {
+            "text": "/*\\\ntitle: $:/plugins/tiddlywiki/fullscreen/init.js\ntype: application/javascript\nmodule-type: browser-startup\n\nMessage handler for full screen mode\n\n\\*/\n(function(){\n\n/*jslint node: true, browser: true */\n/*global $tw: false, Element: false */\n\"use strict\";\n\nvar d = document,\n\tdb = d.body,\n\t_requestFullscreen = db.webkitRequestFullscreen !== undefined ? \"webkitRequestFullscreen\" :\n\t\t\t\t\t\tdb.mozRequestFullScreen !== undefined ? \"mozRequestFullScreen\" :\n\t\t\t\t\t\tdb.msRequestFullscreen !== undefined ? \"msRequestFullscreen\" :\n\t\t\t\t\t\tdb.requestFullscreen !== undefined ? \"requestFullscreen\" : \"\",\n\t_exitFullscreen = d.webkitExitFullscreen !== undefined ? \"webkitExitFullscreen\" :\n\t\t\t\t\t\t\td.mozCancelFullScreen !== undefined ? \"mozCancelFullScreen\" :\n\t\t\t\t\t\t\td.msExitFullscreen !== undefined ? \"msExitFullscreen\" :\n\t\t\t\t\t\t\td.exitFullscreen !== undefined ? \"exitFullscreen\" : \"\",\n\t_fullscreenElement = d.webkitFullscreenElement !== undefined ? \"webkitFullscreenElement\" :\n\t\t\t\t\t\t\td.mozFullScreenElement !== undefined ? \"mozFullScreenElement\" :\n\t\t\t\t\t\t\td.msFullscreenElement !== undefined ? \"msFullscreenElement\" :\n\t\t\t\t\t\t\td.fullscreenElement !== undefined ? \"fullscreenElement\" : \"\";\n\nvar toggleFullscreen = function() {\n\tif(document[_fullscreenElement]) {\n\t\tdocument[_exitFullscreen]();\n\t} else {\n\t\tdocument.documentElement[_requestFullscreen](Element.ALLOW_KEYBOARD_INPUT);\n\t}\n};\n\nexports.startup = function() {\n\t// Install the full screen handler\n\tif(_requestFullscreen) {\n\t\t$tw.rootWidget.addEventListener(\"tw-full-screen\",function(event) {\n\t\t\ttoggleFullscreen();\n\t\t});\n\t}\n};\n\n})();\n",
+            "title": "$:/plugins/tiddlywiki/fullscreen/init.js",
+            "type": "application/javascript",
+            "module-type": "browser-startup"
+        }
+    }
+}
