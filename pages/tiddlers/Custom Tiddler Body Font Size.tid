@@ -1,0 +1,10 @@
+created: 20141114094212198
+modified: 20141114094449509
+tags: $:/tags/Stylesheet
+title: Custom Tiddler Body Font Size
+type: text/vnd.tiddlywiki
+
+.tc-tiddler-frame .tc-tiddler-body {
+	font-size: 18px;
+	line-height: 24px;
+}
