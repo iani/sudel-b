@@ -1,9 +1,27 @@
 created: 20140418085922140
-modified: 20140418105209915
+modified: 20141113193740256
 tags: documentation
 title: Learning TiddlyWiki test
 type: text/vnd.tiddlywiki
 
-???
+! Heading 1 test
+
+test
+
+!! Heading 2 test
+
+test
+
+!!! Heading 3 test
+
+test
+
+!!! Heading 4 test 
+
+test
+
+!!! Heading 5 test
+
+test
 
 <<tabs "[all[tiddlers+shadows]tag[TiddlyWiki]!has[draft.of]]>>

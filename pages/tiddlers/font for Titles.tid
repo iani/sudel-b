@@ -1,0 +1,15 @@
+created: 20141113193102430
+modified: 20141114081806208
+tags: $:/tags/Stylesheet
+title: font for Titles
+type: text/vnd.tiddlywiki
+
+html span.tc-title{
+  font-family: "grafolita-script", "Impact";
+  ## font-weight: bold;
+}
+
+
+h1, h2, h3, h4, h5, h6, h7 {
+  font-family: "jaf-bernino-sans", "Impact";
+}
